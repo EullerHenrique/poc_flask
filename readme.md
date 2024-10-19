@@ -14,6 +14,10 @@
     2. .\venv\Scripts\activate
     3. python.exe -m pip install --upgrade pip
     4. pip install -r requirements.txt
-5. 
 
 ## Execução
+
+1. Rode o comando 
+    - python jogoteca.py
+2. Acesse no host:
+    - http://127.0.0.1:5000
