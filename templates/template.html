@@ -5,9 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jogoteca</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='library/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
     </head>
     <body>
         <div class="container">
+
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul id="messages" class="list-unstyled">
+                    {% for message in messages %}
+                        <li class="alert alert-success">{{ message }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+
           <div class="page-header">
               <h1>{{ titulo }}</h1>
           </div>
