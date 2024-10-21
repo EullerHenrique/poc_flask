@@ -26,8 +26,9 @@
 
             {% block conteudo %}{% endblock %}
 
+
+            <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
+            <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
         </div>
     </body>
-    <script src="{{ url_for('static', filename='library/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
 </html>
